@@ -203,7 +203,7 @@ class User(Document):
     """A User document that aims to mirror most of the API specified by Django
     at http://docs.djangoproject.com/en/dev/topics/auth/#users
     """
-    username = StringField(max_length=30, required=True,
+    username = StringField(max_length=60, required=True,
                            verbose_name=_('username'),
                            help_text=_("Required. 30 characters or fewer. Letters, numbers and @/./+/-/_ characters"))
 
